@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    cursor: default;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+.emcabezado {
+    display: flex;
+    height: 10vh;
+    border-bottom: 0.5px solid lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffffd1;
+}
+.navegacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "open sans";
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.icono {
+    height: 40px;
+    width: 40px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 30px;
+}
+.menu a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #d2691e;
+    color: #fff;
+}
+.portada {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "roboto";
+}
+
+.foto-portada {
+    height: 100%;
+    position: relative;
+    left: -130px;
+    /* filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5)); */
+}
+.frase-boton {
+    position: relative;
+    left: -120px;
+}
+
+.frase {
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.boton {
+    margin-left: 26%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #d2691e;
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.animales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: "roboto";
+}
+.animales-titulo {
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 70px;
+    margin-top: 80px;
+}
+.animales-tarjetas {
+    display: flex;
+    gap: 20px;
+}
+.tarjeta {
+    display: flex;
+    width: 250px;
+    padding: 20px;
+    background: #e58f4abf;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.tarjeta:hover {
+    transform: scale(1.1);
+}
+.tarjeta-contenedor-foto {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 10px;
+}
+.tarjeta-foto {
+    width: 100%;
+}
+.tarjeta-nombre {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 2rem;
+}
+.tarjeta-info {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.tarjeta-estado {
+    font-weight: 900;
+    color: #008000c7;
+}
