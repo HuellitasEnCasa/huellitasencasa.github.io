@@ -240,13 +240,15 @@ body {
 }
 .formulario-contacto button{
     width: 60px;
-}
-.formulario-contacto textarea{
-    width: 100%;
+    cursor: pointer;
 }
 .formulario-input{ 
     width: 100%;
     padding: 10px;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #80808045;
+    cursor: text;
 }
 .contacto-info{
     display: flex;
