@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     cursor: default;
@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: "open sans";
+    font-family: 'open sans';
 }
 .logo {
     display: flex;
@@ -34,6 +34,9 @@ body {
 .icono {
     height: 40px;
     width: 40px;
+}
+.menu-hamburguesa {
+    display: none;
 }
 .menu {
     display: flex;
@@ -61,7 +64,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    font-family: "roboto";
+    font-family: 'roboto';
 }
 
 .foto-portada {
@@ -91,6 +94,12 @@ body {
     border: 1px solid transparent;
     cursor: pointer;
     transition: color 0.3s;
+    text-decoration: none;
+}
+.boton a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 .animales {
@@ -98,7 +107,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    font-family: "roboto";
+    font-family: 'roboto';
 }
 .animales-titulo {
     font-size: 45px;
@@ -145,4 +154,150 @@ body {
 .tarjeta-estado {
     font-weight: 900;
     color: #008000c7;
+}
+
+.como-adoptar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    font-family: 'open sans';
+}
+.contenedor-requisitos {
+    display: flex;
+    align-items: center;
+}
+.requisito-adopcion {
+    width: 300px;
+}
+.requisito-adopcion ol {
+    padding: 0;
+    text-align: center;
+}
+.requisito-adopcion img {
+    width: 300px;
+}
+.requisito-titulo-seccion {
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-top: 80px;
+}
+.requisito-titulo {
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.sobre-nosotros {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'open sans';
+}
+.sobre-nosotros-titulo {
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.sobre-nosotros p {
+    font-size: 25px;
+    text-indent: 2em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.sobre-nosotros-frase {
+    text-indent: 0 !important;
+}
+
+.contacto {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'open sans';
+}
+.contacto-titulo {
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.formulario-contacto {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-contacto button{
+    width: 60px;
+}
+.formulario-contacto textarea{
+    width: 100%;
+}
+.formulario-input{ 
+    width: 100%;
+    padding: 10px;
+}
+.contacto-info{
+    display: flex;
+    gap: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .navegacion {
+        width: 100%;
+        display: flex;
+        padding-left: 5px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-hamburguesa {
+        display: flex;
+        align-items: center;
+    }
+    .menu-hamburguesa p {
+        margin: 0;
+        font-size: 70px;
+    }
+
+    .portada {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .portada section {
+        width: 100%;
+    }
+    .foto-portada {
+        height: 300px;
+        left: -25px;
+        margin-top: 30px;
+    }
+    .frase-boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .frase {
+        position: relative;
+        left: 32%;
+        font-size: 40px;
+        text-align: center;
+    }
+    .boton {
+        position: relative;
+        left: 18%;
+    }
 }

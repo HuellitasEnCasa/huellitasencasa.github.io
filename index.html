@@ -20,12 +20,15 @@
                     <h1 class="titulo">Huellitas en Casa</h1>
                 </div>
 
+                <div class="menu-hamburguesa">
+                    <p>=</p>
+                </div>
                 <div class="menu">
                     <a href="#inicio"> Inicio </a>
                     <a href="#animales"> Animales </a>
-                    <a href=""> Como Adoptar </a>
-                    <a href=""> Donaciones </a>
-                    <a href=""> Contacto </a>
+                    <a href="#requisitos"> Como Adoptar </a>
+                    <a href="#sobre-nosotros"> Sobre Nosotros </a>
+                    <a href="#contactanos"> Contacto </a>
                 </div>
             </nav>
         </header>
@@ -40,7 +43,7 @@
             </section>
             <section class="frase-boton">
                 <h2 class="frase">Un amigo fiel te esta esperando</h2>
-                <button class="boton">Ver animales</button>
+                <a href="#animales" class="boton">Ver animales</a>
             </section>
         </main>
 
@@ -49,7 +52,6 @@
                 <h2 class="animales-titulo">
                     Conoce a quienes buscan un Hogar
                 </h2>
-                <!-- <img src="./Imagenes /gateando.png" alt="" class="gateador"> -->
             </div>
             <div class="animales-tarjetas">
                 <article class="tarjeta">
@@ -118,5 +120,124 @@
             </div>
         </section>
 
+        <section class="como-adoptar" id="requisitos">
+            <h2 class="requisito-titulo-seccion">¿Como adoptar?</h2>
+
+            <div class="contenedor-requisitos">
+                <article class="requisito-adopcion">
+                    <img
+                        src="./Imagenes /como-adoptar-comprimida.png"
+                        alt="icono"
+                    />
+                    <ol>
+                        <li class="requisito-titulo">Conocé a los animales</li>
+                    </ol>
+                    <ul>
+                        <li>Visitá el refugio o mirá las fichas online</li>
+                    </ul>
+                </article>
+
+                <article class="requisito-adopcion">
+                    <img
+                        src="./Imagenes /formulario_comprimido.png"
+                        alt="icono"
+                    />
+                    <ol>
+                        <li class="requisito-titulo">Completá el formulario</li>
+                    </ol>
+                    <ul>
+                        <li>Llená tus datos para postularte como adoptante</li>
+                    </ul>
+                </article>
+
+                <article class="requisito-adopcion">
+                    <img src="./Imagenes /mensage_comprimido.png" alt="icono" />
+                    <ol>
+                        <li class="requisito-titulo">Entrevista</li>
+                    </ol>
+                    <ul>
+                        <li>
+                            te contactamos para conocerte y evaluar
+                            compatibilidad
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="requisito-adopcion">
+                    <img
+                        src="./Imagenes /casa_negra_comprimida.png"
+                        alt="icono"
+                    />
+                    <ol>
+                        <li class="requisito-titulo">
+                            Adoptá y recibí a tu nuevo amigo
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>Llevás al animal a casa con todo lo necesario</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="sobre-nosotros" id="sobre-nosotros">
+            <h2 class="sobre-nosotros-titulo">Sobre Nosotros</h2>
+            <p>
+                Somos un grupo de voluntarios comprometidos con la protección y
+                adopción responsable de animales. Desde 2024, trabajamos para
+                dar una segunda oportunidad a perros y gatos que fueron
+                abandonados o rescatados de situaciones difíciles.
+            </p>
+
+            <p>
+                Creemos que cada vida importa y que todos merecen un hogar lleno
+                de amor. Organizamos jornadas de adopción, campañas de
+                concientización y ayudamos a conectar a los animales con
+                familias responsables.
+            </p>
+
+            <p class="sobre-nosotros-frase">
+                Tu apoyo nos inspira a seguir trabajando. ¡Gracias por estar
+                acá!
+            </p>
+        </section>
+
+        <section class="contacto" id="contactanos">
+            <h2 class="contacto-titulo">Contactanos</h2>
+            <p class="contacto-subtitulo">
+                ¿Querés adoptar, ayudar o hacer una consulta? Escribinos
+            </p>
+
+            <form class="formulario-contacto">
+                <input
+                    class="formulario-input"
+                    type="text"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required
+                />
+                <input
+                    class="formulario-input"
+                    type="email"
+                    name="email"
+                    placeholder="Tu correo"
+                    required
+                />
+                <textarea
+                    class="formulario-input"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Tu mensaje..."
+                    required
+                ></textarea>
+                <button class="formulario-input" type="submit">Enviar</button>
+            </form>
+
+            <div class="contacto-info">
+                <p><i></i> huellitas@refugio.org</p>
+                <p><i></i> +54 9 381 123 4567</p>
+                <p><i></i> @huellitasen.casa</p>
+            </div>
+        </section>
     </body>
 </html>
