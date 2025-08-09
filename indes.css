@@ -238,11 +238,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-.formulario-contacto button{
+.formulario-contacto button {
     width: 60px;
     cursor: pointer;
 }
-.formulario-input{ 
+.formulario-input {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -250,11 +250,93 @@ body {
     background-color: #80808045;
     cursor: text;
 }
-.contacto-info{
+.contacto-info {
     display: flex;
     gap: 15px;
 }
 
+.footer {
+    color: #000;
+    padding: 2rem 1rem 1rem;
+    font-family: 'open sans';
+}
+.footer-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo img {
+    max-width: 80px;
+    margin-bottom: 0.5rem;
+}
+.footer-logo h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.footer-logo p {
+    font-size: 0.9rem;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-menu h4,
+.footer-redes h4 {
+    margin-bottom: 0.5rem;
+}
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-menu ul {
+    margin: 0;
+}
+.footer-menu ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-redes a {
+    color: #000;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    transition: color 0.3s;
+}
+.footer-redes a:hover {
+    color: #000;
+}
+.footer-redes img {
+    width: 40px;
+}
+.footer-derechos {
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #000;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+}
 
 @media (max-width: 768px) {
     .navegacion {
